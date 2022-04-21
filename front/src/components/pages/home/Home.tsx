@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import ArrorLink from './ArrorLink'
+import ArrowLink from '../../ArrowLink'
 
 import { CSSTransition } from 'react-transition-group'
 
@@ -29,7 +29,7 @@ function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
             </div>
-            <ArrorLink path={'about'} />
+            <ArrowLink path={'about'} />
         </section>
         </CSSTransition>
     )
