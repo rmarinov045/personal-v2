@@ -12,14 +12,14 @@ export const projects = [
     {
         heading: 'First portfolio webpage',
         desc: 'This was my first completed project. Built with Vue.',
-        gitLink: '',
-        demoLink: ''
+        gitLink: 'https://github.com/rmarinov045/Portfolio_website',
+        demoLink: 'https://marinovme.netlify.app/#/Home'
     },
     {
         heading: 'signUM issue tracker',
         desc: 'Issue tracker project. Built with React, Firebase, Redux and TypeScript.',
-        gitLink: '',
-        demoLink: ''
+        gitLink: 'https://github.com/rmarinov045/Bug-tracker',
+        demoLink: 'https://signum045.netlify.app/admin'
     },
     {
         heading: 'Chat app',
@@ -41,13 +41,13 @@ function Projects() {
         <main className='h-screen w-full flex bg-primary'>
             <Navbar />
             <CSSTransition in={inProp} timeout={200} classNames='slide' unmountOnExit={true}>
-                <section id='projects' className='w-full h-full flex flex-col gap-20 items-center justify-center px-10 p-2'>
+                <section id='projects' className='w-full lg:w-2/3 lg:mx-auto h-full flex flex-col gap-20 items-center justify-center px-10 p-2'>
                     <div className='font-bold text-tertiary text-4xl'>
                         <h1>Projects</h1>
                     </div>
                     <div className='w-full h-1/2 flex items-center justify-center'>
                         <Carousel className='text-white min-h-full min-w-full' showThumbs={false} infiniteLoop={true} axis='horizontal' dynamicHeight={true} centerMode={true}>
-                            {projects.map(x => <ProjectCard heading={x.heading} desc={x.desc} gitLink={x.gitLink} demoLink={x.demoLink} />)}
+                            {projects.map(x => <ProjectCard key={x.gitLink} heading={x.heading} desc={x.desc} gitLink={x.gitLink} demoLink={x.demoLink} />)}
                         </Carousel>
                     </div>
                     <h3 className='font-bold text-tertiary text-sm'>..and more minor projects!</h3>
