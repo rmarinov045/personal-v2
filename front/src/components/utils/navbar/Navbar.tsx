@@ -30,7 +30,7 @@ function Navbar() {
                 </svg>
 
 
-                <div style={opened ? { display: 'flex' } : { display: 'none' }} className='flex-col gap-5 relative z-20 bg-primary p-10 h-screen w-full items-center'>
+                <div style={opened ? { display: 'flex' } : { display: 'none' }} className='flex-col gap-5 relative z-20 bg-primary p-10 h-screen w-screen items-center'>
 
                     <div className='grid grid-cols-2 auto-cols-fr bg-secondary w-full justify-items-center p-10 gap-10'>
                         {[...Object.values(links)].map(link => <NavbarItemSmall link={link} key={link} />)}

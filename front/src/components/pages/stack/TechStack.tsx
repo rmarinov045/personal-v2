@@ -1,14 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import ArrowLink from '../../utils/ArrowLink'
+import { stackIcons } from '../../utils/navbar/icons'
 import Navbar from '../../utils/navbar/Navbar'
-
-import reactIcon from '../../../assets/react.svg'
-import gitIcon from '../../../assets/git.svg'
-import jsIcon from '../../../assets/js.svg'
-import reduxIcon from '../../../assets/redux.svg'
-import tailwindIcon from '../../../assets/tailwind.svg'
-import tsIcon from '../../../assets/ts.svg'
 
 import StackIcon from './StackIcon'
 
@@ -28,13 +22,8 @@ function TechStack() {
                     <div className='font-bold text-tertiary text-4xl'>
                         <h1>Tech stack</h1>
                     </div>
-                    <div className='grid auto-cols-fr grid-cols-3 justify-items-center gap-20 md:gap-10 w-3/4 h-1/2'>
-                        <StackIcon icon={reactIcon} />
-                        <StackIcon icon={reduxIcon} />
-                        <StackIcon icon={jsIcon} />
-                        <StackIcon icon={tsIcon} />
-                        <StackIcon icon={tailwindIcon} />
-                        <StackIcon icon={gitIcon} />
+                    <div className='grid auto-cols-fr grid-cols-3 justify-items-center gap-24 md:gap-10 w-3/4 h-1/2'>
+                        {[...Object.values(stackIcons)].map((x, index) => <StackIcon icon={x} key={index} />)}
                     </div>
                     <ArrowLink path='/projects' />
                 </section>

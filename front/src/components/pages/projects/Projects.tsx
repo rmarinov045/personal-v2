@@ -13,7 +13,7 @@ export const projects = [
         heading: 'First portfolio webpage',
         desc: 'This was my first completed project. Built with Vue.',
         gitLink: 'https://github.com/rmarinov045/Portfolio_website',
-        demoLink: 'https://marinovme.netlify.app/#/Home'
+        demoLink: 'https://marinovme2.netlify.app/#/Home'
     },
     {
         heading: 'signUM issue tracker',
