@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', arial, sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.slide-enter {
+  animation: slide-down 750ms;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+.carousel-status {
+  display: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background-color: transparent !important;
+}
+
+
