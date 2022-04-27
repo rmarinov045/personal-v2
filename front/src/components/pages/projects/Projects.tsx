@@ -19,7 +19,7 @@ export const projects = [
         heading: 'signUM issue tracker',
         desc: 'Issue tracker project. Built with React, Firebase, Redux and TypeScript.',
         gitLink: 'https://github.com/rmarinov045/Bug-tracker',
-        demoLink: 'https://signum045.netlify.app/admin'
+        demoLink: 'https://signum045.netlify.app'
     },
     {
         heading: 'Chat app',
