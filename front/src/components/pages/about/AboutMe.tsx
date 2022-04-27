@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../Navbar'
+import Navbar from '../../utils/navbar/Navbar'
 import { CSSTransition } from 'react-transition-group'
 
 import profileImg from '../../../assets/IMG_1308.jpg'
-import ArrowLink from '../../ArrowLink'
+import ArrowLink from '../../utils/ArrowLink'
 
 function AboutMe() {
 

@@ -6,7 +6,7 @@ const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 
 export const sendEmail = async (formData :{ [key :string]: FormDataEntryValue }) => {
     
-    if ([...Object.values(formData)].some(x => x === '')) {
+    if ([...Object.values(formData)].some(x => x === '')) {        
         throw new Error ('Please fill all fields!')
     }       
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import ArrowLink from '../../ArrowLink'
+import ArrowLink from '../../utils/ArrowLink'
 
 import { CSSTransition } from 'react-transition-group'
 

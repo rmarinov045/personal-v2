@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../Navbar'
+import Navbar from '../../utils/navbar/Navbar'
 
 import { CSSTransition } from 'react-transition-group'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-import ArrowLink from '../../ArrowLink'
+import ArrowLink from '../../utils/ArrowLink'
 import ProjectCard from './ProjectCard'
 
 export const projects = [
