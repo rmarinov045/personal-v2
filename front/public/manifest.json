@@ -3,22 +3,22 @@
   "name": "Marinov personal page",
   "icons": [
     {
-      "src": "",
+      "src": "logo-v2.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "",
+      "src": "logo-v2.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "",
+      "src": "logo-v2.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

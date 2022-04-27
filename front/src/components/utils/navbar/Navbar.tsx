@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import NavbarItem from './NavbarItem'
 import NavbarItemSmall from './NavbarItemSmall'
 
+import logo from '../../../assets/logo-v2.svg'
+
 export const links = {
     home: '/',
     about: '/about',
@@ -17,7 +19,7 @@ function Navbar() {
     return (
         <nav className='flex flex-col max-w-[4rem] min-w-fit h-full bg-secondary pt-2'>
             <div className='hidden md:flex w-full items-center justify-center'>
-                <img src="" alt="logo" className=' w-full min-h-[5rem]' />
+                    <img src={logo} alt="logo" className='h-12 w-12' />
             </div>
 
             <div className='hidden md:flex h-1/2 my-auto flex-col gap-10 items-center text-tertiary'>
@@ -36,7 +38,7 @@ function Navbar() {
                         {[...Object.values(links)].map(link => <NavbarItemSmall link={link} key={link} />)}
 
                         <div className='items-center justify-center w-full h-20 flex'>
-                            <img src="" alt="logo" className='' />
+                            <img src={logo} alt="logo" className='h-16 w-16' />
                         </div>
                     </div>
 
