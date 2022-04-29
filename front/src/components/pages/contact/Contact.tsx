@@ -79,7 +79,7 @@ function Contact() {
 
                         <button disabled={loading ? true : false} style={loading ? { backgroundColor: '#1a74e2' } : {}} className='p-2 text-base bg-lighter min-w-fit w-1/5 mx-auto rounded transition-all ease-in-out 150 hover:bg-light'>{loading ? 'Sending...' : 'Send!'}</button>
 
-                        <div className='btn w-2/3 mt-10 mx-auto flex items-center justify-center transition-all ease-in-out 150'>
+                        <div className='btn w-2/3 mt-2 md:mt-10 mx-auto flex items-center justify-center transition-all ease-in-out 150'>
                             {modalMessage ? <p style={modalMessage && success ? { padding: '0.5rem', backgroundColor: '#16a34a' } : { backgroundColor: '#dc2626', padding: '0.5rem' }} className='text-base rounded'>{modalMessage}</p> : <></>}
                         </div>
 
@@ -92,7 +92,5 @@ function Contact() {
         </main>
     )
 }
-
-// Form moves upwards on mobile due to relative heigth of elements => keyboard appearing pushes content up
 
 export default Contact
