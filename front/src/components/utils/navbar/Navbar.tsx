@@ -26,7 +26,7 @@ function Navbar() {
                 {[...Object.values(links)].map(link => <NavbarItem link={link} key={link} />)}
             </div>
 
-            <div className='flex flex-col fixed top-0 w-full min-h-[2rem] items-center md:hidden py-2 px-5 z-20'>
+            <div id='mobile-nav' className='flex flex-col absolute top-0 w-full min-h-[2rem] items-center md:hidden py-2 px-5 z-20'>
                 <svg onClick={() => setOpened(!opened)} xmlns="http://www.w3.org/2000/svg" style={opened ? { transform: "rotate(90deg)" } : {}} className="text-tertiary self-end w-10 h-10 hover:text-light transition-all ease-in-out 150 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
