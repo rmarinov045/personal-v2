@@ -46,11 +46,11 @@ function Projects() {
                         <h1>Projects</h1>
                     </div>
                     <div className='w-full h-1/2 flex items-center justify-center'>
-                        <Carousel className='text-white min-h-full min-w-full' showThumbs={false} infiniteLoop={true} axis='horizontal' dynamicHeight={true} centerMode={true}>
+                        <Carousel className='text-white min-h-full min-w-full' showThumbs={false} infiniteLoop={false} axis='horizontal' dynamicHeight={true} centerMode={false}>
                             {projects.map(x => <ProjectCard key={x.gitLink} heading={x.heading} desc={x.desc} gitLink={x.gitLink} demoLink={x.demoLink} />)}
                         </Carousel>
                     </div>
-                    <h3 className='font-bold text-tertiary text-sm'>..and more minor projects!</h3>
+                    <h3 className='font-bold text-tertiary text-sm hidden md:block'>..and more minor projects!</h3>
                     <ArrowLink path='/contact' />
                 </section>
             </CSSTransition>
