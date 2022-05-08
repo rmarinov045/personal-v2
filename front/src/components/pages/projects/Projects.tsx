@@ -22,10 +22,10 @@ export const projects = [
         demoLink: 'https://signum045.netlify.app'
     },
     {
-        heading: 'Chat app',
-        desc: 'Current project I am working on. Expect updates soon!',
-        gitLink: '',
-        demoLink: ''
+        heading: 'r-chat',
+        desc: 'Realtime chat app.',
+        gitLink: 'https://github.com/rmarinov045/r-chat',
+        demoLink: 'https://r-chat01.netlify.app'
     }
 ]
 
